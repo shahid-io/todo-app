@@ -25,7 +25,7 @@ const TodoList = (props) => {
                                 checked={todo.completed}
                                 hidden
                             />
-                            <div onClick={() => checkTodo(todo.id)} className="text-blue-500 hover:text-green-700 transform hover:scale-110 transition duration-300">
+                            <div onClick={() => checkTodo(todo.id)} className={`hover:text-green-700 ${todo.completed ? 'text-green-700' : 'text-blue-500'} transform hover:scale-110 transition duration-300`}>
                                 <FiCheckSquare className="text-2xl" />
                             </div>
                         </div>
